@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import HomeView from './views/HomeView';
+import AboutView from './views/AboutView';
+import NotFoundView from './views/NotFoundView';
+import UserView from './views/UserView';
+import CounterView from "./views/CounterView";
+import NavBar from './components/NavBar';
+import Footer from './components/Footer';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <NavBar/>   
+      <Routes>
+        <Route path="/" element= {<HomeView/>}/>
+        <Route path="/about" element= {<AboutView/>}/>
+        <Route path="/mascota/:id" element= {<UserView/>}/>
+        <Route path="/counter" element= {<CounterView/>}/>
+        <Route path="*" element= {<NotFoundView/>}/>
+      </Routes>
+      <Footer/>
+    </BrowserRouter>
   );
 }
-
-export default App;

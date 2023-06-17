@@ -1,0 +1,72 @@
+.content {
+    width: 100%;
+    text-align: center; /* Centrar contenido horizontalmente */
+  }
+.content .configuration {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content .configuration #configuration-values {
+    color: black;
+    margin-bottom: 10px;
+  }
+
+  .content .configuration #configuration-values p {
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .content .configuration #configuration-values input {
+    text-align: center;
+    width: 30%;
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    color: black;
+    font-size: 20px;
+}
+
+.content .titleTemp {
+  text-align: start;
+}
+
+.content .timer{
+  width: 100%;
+}
+
+.content .timer .display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px auto;
+    border: 3px solid rgb(0, 0, 0);
+  }
+
+  .content .timer .display .time {
+    justify-content: center;
+    display: flex;
+    font-size: 60px;
+    color: black;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+
+  .content .timer .controls {
+    margin-bottom: 15px;
+  }
+
+  .content .timer .controls i {
+    cursor: pointer;
+    font-size: 30px;
+    margin: 0 10px;
+    color: black;
+  }

@@ -1,10 +1,26 @@
-
+.navbar{
+    margin-top: 30px;
+    /*align-items: center;*/
+    
+}
 .navbar ul{
-    display:flex;
-    justify-content: space-around;
-}
-.active{
-    color:red;
-    font-weight: bold;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
 }
 
+.navbar ul li .navlink{
+    font-size: 20px;
+    font-weight: bold;
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    outline: none;
+    margin-right: 30px;
+    list-style-type: none;
+}
+
+.navbar ul li .navlink:hover{
+    color:rgb(88, 88, 88);
+}

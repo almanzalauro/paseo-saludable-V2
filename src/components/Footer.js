@@ -4,7 +4,9 @@ export default Footer
 
 function Footer() {
   return (
-    <div className="footer">
-          <p>Created by Lauro Almanza</p>
+    <div className="content">
+      <div className="footer">
+            <p>Created by Lauro Almanza</p>
+      </div>
     </div>
 )}

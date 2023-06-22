@@ -15,9 +15,11 @@ const db = mysql.createConnection({
 
 app.post("/create",(req,res)=>{
     const nombre = req.body.nombre;
-    const password = req.body.password;
+    const especie = req.body.especie;
+    const edad = req.body.edad;
 
-    db.query('INSERT INTO mascota(nombre, password) VALUES(?,?)',[nombre,password],(err,result)=>{
+
+    db.query('INSERT INTO mascota(nombre, especie, edad) VALUES(?,?,?)',[nombre,especie,edad],(err,result)=>{
         if(err){
             console.log(err);
         }else{

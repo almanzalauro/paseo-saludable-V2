@@ -3,5 +3,6 @@
 }
 .footer p {
     font-weight: bold;
-    color: black;
+    letter-spacing: 1.5px;
+    color: rgb(247, 247, 247);
 }

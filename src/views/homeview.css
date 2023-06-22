@@ -1,0 +1,61 @@
+
+#title-content .title {
+    display: inline-block;
+    margin: 0;
+    padding: 10px 20px;
+    color:white;
+    border-bottom: 2px solid white;
+}
+
+#title-content .title h1{
+    margin-bottom: 0px;
+}
+
+.HomeView .home-content{
+    margin: auto;
+    width:fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 600px;
+}
+
+.HomeView .home-content .home-form{
+    margin-top:30px;   
+}
+.HomeView .home-content .home-form form{
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.HomeView .home-content .home-form form input{
+    margin: 10px 0;
+    padding: 10px 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color:rgba(39, 39, 39, 0.384);
+    border-bottom: 1px solid black;   
+}
+
+.HomeView .home-content .home-form form input::placeholder{
+    color:rgb(197, 197, 197);
+    font-weight: bold;
+}
+
+.HomeView .home-content .home-form form button{
+    margin:10px 10px;
+    padding:10px 10px;
+    outline: none;
+    border: none;
+    background-color:rgb(83, 83, 255);
+    cursor:pointer;
+    border-radius:10px;
+    color:white;
+}
+
+.HomeView .home-content .home-form form button:hover{
+    background-color:rgb(56, 56, 250);
+}

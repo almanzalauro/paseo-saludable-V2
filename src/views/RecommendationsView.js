@@ -58,7 +58,14 @@ const activity = [
 function RecommendationsView() {
   return (
     <div className="recommendationsViews">
-      <h2>Recomendaciones para tu mascota</h2>
+
+      <div id="title-content">  
+        <span className="title">       
+          <h1>Recomendaciones</h1>
+        </span>    
+      </div>
+
+      
       {activity.map((item, index) => (
         <Recomendation
           key={index}

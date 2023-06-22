@@ -69,6 +69,7 @@ export default function CounterView() {
 
   return (
     <div className="content">
+      
       <div className="titleTemp">
         <h1>Temporizador</h1>
         <p>Controla el tiempo de paseo de tu amig@</p>

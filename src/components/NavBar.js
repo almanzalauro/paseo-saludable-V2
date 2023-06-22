@@ -21,6 +21,10 @@ function NavBar() {
             </li>
 
             <li>
+                <NavLink className = "navlink" to='/notes'>Notas</NavLink>
+            </li>
+
+            <li>
                 <NavLink className = "navlink" to='/about'>Acerca de</NavLink>
             </li>
             

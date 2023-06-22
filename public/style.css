@@ -13,3 +13,8 @@ body{
     padding: 0 30px;
     min-width: 320px;
 }
+
+.home, .about{
+    background-color:aqua;
+    height:100vh;
+}

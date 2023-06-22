@@ -9,7 +9,6 @@ import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import "./index";
 
-
 export default function App() {
   return (
     <div className="AppContent">
@@ -20,7 +19,6 @@ export default function App() {
           <Route path="/about" element= {<AboutView/>}/>
           <Route path="/counter" element= {<CounterView/>}/>
           <Route path="/recommendations" element= {<RecommendationsView/>}/>
-          <Route path="*" element= {<NotFoundView/>}/>
         </Routes>
         <Footer/>
       </BrowserRouter>

@@ -1,3 +1,5 @@
+Este proyecto está enfocado en aplicar conocimientos de React, html, css y js. Su enfoque está puesto en realizar una web para generar conocimiento sobre las distintas recomendaciones para las mascotas como asi también utilizar un cronometro para medir los tiempos de paseo de la mascota.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

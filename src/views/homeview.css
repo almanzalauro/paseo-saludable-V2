@@ -1,4 +1,7 @@
-
+.HomeView{
+    height:80vh;
+    margin:0 0 10px 0
+}
 #title-content .title {
     display: inline-block;
     margin: 0;
@@ -12,40 +15,51 @@
 }
 
 .HomeView .home-content{
-    margin: auto;
-    width:fit-content;
+    margin: 0 auto ;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 600px;
+    padding:0 10px;
 }
 
-.HomeView .home-content .home-form{
-    margin-top:30px;   
-}
+
 .HomeView .home-content .home-form form{
-    
     display: flex;
     flex-direction: column;
+    min-width: 320px;
+    padding: 0;
 }
 
-.HomeView .home-content .home-form form input{
+.HomeView .home-content .home-form form input,
+.HomeView .home-content .home-nota input{
     margin: 10px 0;
-    padding: 10px 10px;
+    padding: 20px 20px;
     outline: none;
     border: none;
+    color:white;
+    letter-spacing: 2px;
     border-radius: 10px;
     background-color:rgba(39, 39, 39, 0.384);
     border-bottom: 1px solid black;   
 }
+.HomeView .home-content .home-nota{
+    display:flex;
+    flex-direction: column;
+    min-width: 320px;
 
-.HomeView .home-content .home-form form input::placeholder{
+}
+.HomeView .home-content .home-nota #mascotaNota{
+    width: 300px;
+    height: 200px;
+}
+.HomeView .home-content .home-form form input::placeholder,
+.HomeView .home-content .home-nota  input::placeholder{
     color:rgb(197, 197, 197);
     font-weight: bold;
 }
 
-.HomeView .home-content .home-form form button{
+.HomeView .home-content .home-nota  button{
     margin:10px 10px;
     padding:10px 10px;
     outline: none;
@@ -56,6 +70,6 @@
     color:white;
 }
 
-.HomeView .home-content .home-form form button:hover{
+.HomeView .home-content .home-nota button:hover{
     background-color:rgb(56, 56, 250);
 }

@@ -1,8 +1,36 @@
 .footer {
-    margin-top: 30px;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    flex-wrap: wrap;
+    
+
 }
 .footer p {
+    margin:0;
     font-weight: bold;
     letter-spacing: 1.5px;
     color: rgb(247, 247, 247);
+}
+
+.footer span{
+    margin-left: 40px;
+}
+
+.footer span a{
+    font-size: 2rem;
+    color:white;
+    margin-right: 10px;
+}
+
+.footer span .linkedin:hover{
+    color: blue;
+    font-size:2.1rem;
+    transition: 0.5s;
+}
+
+.footer span .github:hover{
+    color: rgb(0, 0, 0);
+    font-size:2.1rem;
+    transition: 0.4s;
 }

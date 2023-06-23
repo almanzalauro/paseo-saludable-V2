@@ -6,15 +6,26 @@ body{
     /*background-position: center center;
     background-attachment: fixed;*/
     background-size: cover;
+    height: 100vh;
 }
-
+html{
+    margin: 0;
+    padding: 0;
+}
 #root {
     padding: 0 30px;
-    min-width: 320px;
 }
 
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
-
+.content {
+    height: 100%;
+    flex: 1;
+}
 
 
 

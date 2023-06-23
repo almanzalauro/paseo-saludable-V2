@@ -1,4 +1,4 @@
-import {NavLink}from 'react-router-dom';
+import {NavLink }from 'react-router-dom';
 import "./navbar.css";
 
 export default NavBar
@@ -21,7 +21,7 @@ function NavBar() {
             </li>
 
             <li>
-                <NavLink className = "navlink" to='/notes'>Notas</NavLink>
+                <NavLink className="navlink"  to={`/notes`}>Notas</NavLink>
             </li>
 
             <li>

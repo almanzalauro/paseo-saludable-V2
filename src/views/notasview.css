@@ -1,0 +1,28 @@
+.NotasView{
+    height: 80vh;
+}
+.NotasView .notas-mascotas{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+.NotasView .notas-mascotas .notas{
+    margin:auto;
+    height: 100%;
+}
+
+.NotasView .notas-mascotas .notas .item{
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.39);
+    margin:20px auto;
+    border-radius: 20px;
+}
+
+.NotasView .notas-mascotas .notas .item h2{
+    margin: 0;
+}
+
+.NotasView .notas-mascotas .notas .item p{
+    margin: 0;
+}

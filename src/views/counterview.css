@@ -1,72 +1,83 @@
-.content {
-    width: 100%;
-    text-align: center; /* Centrar contenido horizontalmente */
-  }
-.content .configuration {
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .content .configuration #configuration-values {
-    color: black;
-    margin-bottom: 10px;
-  }
-
-  .content .configuration #configuration-values p {
-    font-weight: bold;
-    font-size: 20px;
-  }
-
-  .content .configuration #configuration-values input {
-    text-align: center;
-    width: 30%;
-    background: none;
-    outline: none;
-    border: none;
-    border-bottom: 1px solid black;
-    color: black;
-    font-size: 20px;
+.CounterContent #title-content p{
+  color:white;
+  font-size: 20px;
+}
+.CounterContent .temporizador {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.content .titleTemp {
-  text-align: start;
+.CounterContent .temporizador .configuration {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1px;
 }
 
-.content .timer{
-  width: 100%;
+.CounterContent .temporizador .configuration #configuration-values {
+  color: black;
+  text-align: center;
 }
 
-.content .timer .display {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    margin: 20px auto;
-    border: 3px solid rgb(0, 0, 0);
-  }
+.CounterContent .temporizador .configuration #configuration-values p {
+  -webkit-text-stroke: 0.5px black;
+  color:rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 30px;
 
-  .content .timer .display .time {
-    justify-content: center;
-    display: flex;
-    font-size: 60px;
-    color: black;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-  }
+}
 
-  .content .timer .controls {
-    margin-bottom: 15px;
-  }
+.CounterContent .temporizador .configuration #configuration-values input {
+  text-align: center;
+  width: 50%;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgb(233, 233, 233);
+  color: rgb(252, 252, 252);
+  font-size: 20px;
+  background-color: rgba(180, 180, 180, 0.2);
+}
 
-  .content .timer .controls i {
-    cursor: pointer;
-    font-size: 30px;
-    margin: 0 10px;
-    color: black;
-  }
+.CounterContent .temporizador .timer .display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(180, 180, 180, 0.2);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 20px auto;
+  border: 3px solid rgba(255, 255, 255, 0.788);
+}
+
+.CounterContent .temporizador .timer .display .time {
+  justify-content: center;
+  display: flex;
+  font-size: 60px;
+  color: black;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.CounterContent .temporizador .timer .display .time p {
+  color: rgba(255, 255, 255, 0.788);
+  margin: auto 0;
+  -webkit-text-stroke: 1px black;
+}
+
+.CounterContent .temporizador .timer .controls {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.CounterContent .temporizador .timer .controls i {
+  -webkit-text-stroke: 1px black;
+  cursor: pointer;
+  font-size: 30px;
+  margin: 0 10px;
+  color: rgb(255, 255, 255);
+}

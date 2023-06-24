@@ -14,7 +14,7 @@ const db = mysql.createConnection({
     database: process.env.DB_NAME,
 });
 
-
+console.log(process.env.DB_HOST)
 // Ruta para crear una nueva mascota
 app.post("/create", (req, res) => {
     const { nombre, especie, edad, nota } = req.body;
@@ -68,6 +68,6 @@ app.get("/mascotas", (req, res) => {
   });
   
 
-app.listen(3001, () => {
-    console.log("Corriendo en el puerto 3001");
+app.listen(process.env.PORT, () => {
+    console.log(`Corriendo en el puerto ${process.env.PORT}`);
 });

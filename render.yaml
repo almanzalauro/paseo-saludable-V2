@@ -1,0 +1,8 @@
+services:
+  - name: paseo-saludable
+    type: web
+    buildCommand: npm run build
+    publishDir: build
+    env:
+      - name: NODE_ENV
+        value: production

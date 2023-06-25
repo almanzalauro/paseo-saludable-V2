@@ -72,6 +72,6 @@ app.get("/mascotas", (req, res) => {
   );
 });
 
-app.listen(config.PORT, () => {
-  console.log(`Corriendo en el puerto ${config.PORT}`);
+app.listen(process.PORT, () => {
+  console.log(`Corriendo en el puerto ${process.PORT}`);
 });
